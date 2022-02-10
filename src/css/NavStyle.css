@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Felipa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("http://fonts.cdnfonts.com/css/apple-chancery");
+
+.Nav,
+.Footer {
+  width: 100%;
+}
+
+.Nav {
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+  height: 90px;
+  box-shadow: 0px 2px 2px #00b158;
+  margin-bottom: 2px;
+}
+
+.Nav-InnerContainer {
+  max-width: 80%;
+  margin: auto;
+  padding: 13px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 1367px) {
+  .Nav-InnerContainer {
+    max-width: 60%;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 768px) {
+  .Nav-InnerContainer {
+    max-width: 100%;
+    transition: 0.5s;
+    display: block;
+  }
+}
+
+.Nav-InnerContainer-Menu a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #363636;
+  margin-right: 25px;
+}
+@media (max-width: 768px) {
+  .Nav-InnerContainer-Menu a {
+    display: none;
+  }
+}
+
+.Nav-InnerContainer-Menu a:last-child {
+  margin-right: 0;
+}
+
+.Nav-InnerContainer-Menu a:hover {
+  /* border-bottom: 3px solid #00b158; */
+  color: #00b158;
+  transition: 00.2s;
+}
+
+.Nav-InnerContainer-Menu a.active {
+  background: #00b158;
+  color: #ffffff;
+  transition: 0.5s;
+  width: 94px;
+  padding: 4px 20px;
+  border-bottom: none;
+  border-radius: 20px;
+}
+@media (max-width: 768px) {
+  .Nav-InnerContainer-Menu a.active {
+    margin: auto;
+  }
+}
+
+.hamber {
+  cursor: pointer;
+  color: #ffffff;
+  width: 26px;
+  height: 20px;
+  display: none;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .hamber {
+    display: flex;
+  }
+}
+
+/* Navigation Bar MEDIA QURIE*/
+@media (max-width: 768px) {
+  .Nav-InnerContainer-Logo {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .Nav-InnerContainer-Menu {
+    position: absolute;
+    width: 100%;
+    transition: 0.1s;
+    padding: 30px 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+  }
+
+  .Nav-InnerContainer-Menu {
+    display: none;
+  }
+
+  .Nav-InnerContainer-Menu a {
+    display: block;
+    margin-top: 18px;
+    margin-right: 0;
+  }
+}
+
+/* display none for JS */
+
+.d-block {
+  display: block;
+  transition: 0.5s;
+}
+
+.d-none {
+  display: none;
+}
+
+.YammyFooter {
+  bottom: 0px;
+  background-color: #17285a;
+}
+
+.footerMenu {
+  cursor: pointer;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 18px;
+  margin-bottom: 28.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerMenu a {
+  padding: 18px 0 30px;
+}
+
+.footerMenu a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 15px;
+}
+
+.footerMenuIcon a {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+}
+
+.footerMenuLogo,
+.footerMenuAncor,
+.footerMenuIcon {
+  margin-top: 18px;
+}
+
+.footerMenuLogo a {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.footerCopyRights p {
+  max-width: 80%;
+  margin: auto;
+  font-size: 14px;
+  color: #ffffff;
+  text-align: center;
+  border-top: 1px solid #ffffff;
+  padding: 10px 0;
+}
+
+/* Footer Bar MEDIA QURIE*/
+@media (max-width: 768px) {
+  .footerMenu {
+    display: block;
+    transition: 0.5s;
+    text-align: center;
+  }
+
+  .footerMenuLogo {
+    padding-top: 40px;
+    transition: 0.5s;
+  }
+  .footerMenuLogo,
+  .footerMenuAncor {
+    margin-bottom: 40px;
+    transition: 0.5s;
+  }
+  .footerMenuIcon {
+    margin-bottom: 62.5px;
+    transition: 0.5s;
+  }
+}
+/* Footer Bar STARTING ENDING*/
